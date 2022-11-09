@@ -1,0 +1,86 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800&display=swap');
+
+#contenedor-principal {
+    min-height: 100vh;
+    background-color: #F2F3F4;
+    font-family: 'Nunito', sans-serif !important;
+
+    #login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+
+        .card {
+            width: 28vw;
+            
+            label {
+                font-size: 18px
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                width: 45vw;
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                width: 60vw;
+            }
+
+            @media (max-width: 575px) {
+                width: 90vw;
+            }
+        }
+    }
+
+    //Encabezado
+    header#encabezado {
+        nav.navbar {
+
+            ul.navbar-nav {
+                li {
+                    a {
+                        font-size: 18px;
+                        color: #212527;
+                        border-radius: 3px;
+                        margin: 0 5px;
+
+                        &:hover {
+                            background-color: rgba(93, 109, 126, .2);
+                            font-weight: 600;
+                        }
+
+                        &.router-link-active {
+                            background-color: rgba(93, 109, 126, .2);
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Contenedor secundario
+    #contenedor-secundario {
+        padding: 25px;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    .btn-primary,.btn-success,.btn-danger,.btn-dark {
+        color: #fff
+    }
+
+    .btn-primary:hover,.btn-success:hover,.btn-danger:hover,.btn-dark:hover {
+        color: #fff
+    }
+
+    table {
+        thead {
+            border-bottom: 2px solid #212629;
+        }
+    }
+}
